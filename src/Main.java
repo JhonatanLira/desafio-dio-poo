@@ -1,3 +1,4 @@
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -5,7 +6,7 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-
+//Herança
         Curso curso1 = new Curso();
         curso1.setTitulo("Curso Java");
         curso1.setDescricao("Curso de java");
@@ -25,5 +26,7 @@ public class Main {
         mentoria1.setData(LocalDate.now());
 
         System.out.println(mentoria1);
+
+
     }
 }
