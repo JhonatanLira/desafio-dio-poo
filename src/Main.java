@@ -32,6 +32,11 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria1);
 
+        Desafio desafio = new Desafio();
+        desafio.setTitulo("Desafio POO");
+        desafio.setDescricao("Desdicao desafio POO");
+        desafio.setLinkGithub("https://github.com/JhonatanLira/desafio-dio-poo.git");
+
         Dev devJhow = new Dev();
         devJhow.setNome("Jhonatan");
         devJhow.inscreverBootcamp(bootcamp);
@@ -39,9 +44,12 @@ public class Main {
         System.out.println("Conteúdos Inscritos: "+devJhow.getConteudosInscritos());
         devJhow.progredir();
         System.out.println("Conteúdos Inscritos: "+devJhow.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos: "+devJhow.getConteudosConcluidos());
-        System.out.println("XP: "+devJhow.calcularTotalXp());
 
+        desafio.envioDesafio(desafio);
+
+      //  System.out.println("Conteúdos Concluídos: "+devJhow.getConteudosConcluidos());
+      //  System.out.println("XP: "+devJhow.calcularTotalXp());
+/*
         System.out.println("-------------------------");
 
         Dev devBill = new Dev();
@@ -54,7 +62,7 @@ public class Main {
         System.out.println("Conteúdos Inscritos: "+devBill.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos: "+devBill.getConteudosConcluidos());
         System.out.println("XP: "+devBill.calcularTotalXp());
-
+*/
 
     }
 }
